@@ -19,6 +19,7 @@ body {
 .header {
   width: 78%;
   display: flex;
+  text-shadow: 1px 1px 1px red, 1px 2px 1px blue, 1px 3px 1px purple;
   /* justify-content: start; */
   /* align-items: bottom; */
   /* background-color: orange; */
@@ -46,6 +47,7 @@ body {
   width: 78%;
   background-color: #1e0836;
   height: 80px;
+  overflow-y: hidden;
 }
 
 #res {
@@ -108,23 +110,42 @@ body {
   border-bottom: 2px solid #c45829;
 }
 
+button {
+  transition-duration: 0.2s;
+}
+
 button:hover {
   cursor: pointer;
   background-color: #fbe962;
   color: #331b4d;
 
   border-bottom: 2px solid #c45829;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 #c45829;
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
 }
 
 #botao-resultado {
   background-color: #00decf;
   color: white;
   border-bottom: 2px solid white;
+  transition-duration: 0.2s;
 }
 
 #botao-resultado:hover {
   background-color: red;
   color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 0 white;
+}
+
+#botao-resultado:active {
+  transform: translateY(2px);
+  box-shadow: 0 0px 0;
 }
 
 /*==========CALC=========*/
