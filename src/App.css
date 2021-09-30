@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+/*==========HTML=========*/
+
+html {
+  background-color: #17062a;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*==========BODY=========*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+/*==========HEADER=========*/
+
+.header {
+  width: 78%;
+  display: flex;
+  /* justify-content: start; */
+  /* align-items: bottom; */
+  /* background-color: orange; */
+}
+
+/*==========MAIN=========*/
+
+.main {
+  height: 600px;
+  margin-top: 4rem;
+  background-color: #0d021a;
+  border-radius: 0.4rem;
+  width: 500px;
+  color: #fbe962;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*==========RESULTADO=========*/
+
+.res {
+  border-radius: 0.3rem;
+  width: 78%;
+  background-color: #1e0836;
+  height: 80px;
+}
+
+#res {
+  margin-right: 1rem;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*==========BOTOES=========*/
+
+.botoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.botoes-final {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.botoes button {
+  height: 60px;
+  width: 90px;
+  margin: 5px;
+  color: #fbe962;
+  font-size: 28px;
+  background-color: #331b4d;
+  border-radius: 0.3rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: solid 2px #b01fe3;
+}
+
+.botoes-final button {
+  height: 60px;
+  width: 190px;
+  margin: 5px;
+  color: #fbe962;
+  font-size: 28px;
+  background-color: #331b4d;
+  border-radius: 0.3rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: solid 2px #b01fe3;
+}
+
+#res-del {
+  background-color: #56077c;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#res-del:hover {
+  background-color: #d19423;
+  color: #331b4d;
+
+  border-bottom: 2px solid #c45829;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  cursor: pointer;
+  background-color: #fbe962;
+  color: #331b4d;
+
+  border-bottom: 2px solid #c45829;
+}
+
+#botao-resultado {
+  background-color: #00decf;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+#botao-resultado:hover {
+  background-color: red;
+  color: white;
+}
+
+/*==========CALC=========*/
+
+.calc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  width: 95%;
+  height: 380px;
 }
